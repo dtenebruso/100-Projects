@@ -10,7 +10,7 @@ class FTPClient():
 
 		try:
 			ftp.login(uname, passwd)
-			print("Connected to %s as %s"%(host, uname))
+			print("Connected to {} as {}".format(host, uname))
 			ftp.cwd('/')
 			ftp.dir()
 
